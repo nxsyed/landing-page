@@ -12,7 +12,9 @@ const Wrapper = styled.a`
     transform: translateY(-5px);
   }
 `
-
+const TitleLayer = styled.div`
+  ${tw`flex flex-col lg:flex-row items-center mt-8`};
+`
 const Text = styled.div`
   ${tw`opacity-75 font-sans text-sm md:text-base`};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -23,10 +25,13 @@ const Title = styled.div`
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `
 
-const ProjectCard = ({ title, link, children, bg }) => (
-  <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}>
+const ProjectCard = ({ title, children, bg, img}) => (
+  <Wrapper target="_blank" rel="noopener noreferrer" bg={bg}>
+    <TitleLayer>
+      <img src={img}/>
+      <Title>{title}</Title>
+    </TitleLayer>
     <Text>{children}</Text>
-    <Title>{title}</Title>
   </Wrapper>
 )
 
@@ -34,7 +39,7 @@ export default ProjectCard
 
 ProjectCard.propTypes = {
   title: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+  img: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
   bg: PropTypes.string.isRequired,
 }

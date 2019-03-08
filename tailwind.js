@@ -45,10 +45,8 @@ const defaultConfig = require('tailwindcss/defaultConfig')();
 
 const colors = {
   transparent: 'transparent',
-
   'blue-black': '#161719',
   'blue-grey': '#23262b',
-
   black: '#222b2f',
   'grey-darkest': '#273238',
   'grey-darker': '#364349',
@@ -58,7 +56,6 @@ const colors = {
   'grey-lighter': '#f3f7f9',
   'grey-lightest': '#fafcfc',
   white: '#ffffff',
-
   'red-darkest': '#420806',
   'red-darker': '#6a1b19',
   'red-dark': '#cc1f1a',
@@ -66,7 +63,6 @@ const colors = {
   'red-light': '#ef5753',
   'red-lighter': '#f9acaa',
   'red-lightest': '#fcebea',
-
   'orange-darkest': '#542605',
   'orange-darker': '#7f4012',
   'orange-dark': '#c1611f',
@@ -74,7 +70,6 @@ const colors = {
   'orange-light': '#ffa31b',
   'orange-lighter': '#fcd9b6',
   'orange-lightest': '#fff5eb',
-
   'yellow-darkest': '#453411',
   'yellow-darker': '#684f1d',
   'yellow-dark': '#f2d024',
@@ -82,7 +77,6 @@ const colors = {
   'yellow-light': '#fff382',
   'yellow-lighter': '#fff9c2',
   'yellow-lightest': '#fcfbeb',
-
   'green-darkest': '#032d19',
   'green-darker': '#0b4228',
   'green-dark': '#1f9d55',
@@ -90,7 +84,6 @@ const colors = {
   'green-light': '#51d88a',
   'green-lighter': '#a2f5bf',
   'green-lightest': '#e3fcec',
-
   'teal-darkest': '#0d3331',
   'teal-darker': '#174e4b',
   'teal-dark': '#38a89d',
@@ -98,7 +91,6 @@ const colors = {
   'teal-light': '#64d5ca',
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
-
   'blue-darkest': '#0a224e',
   'blue-darker': '#103d60',
   'blue-dark': '#2779bd',
@@ -106,7 +98,6 @@ const colors = {
   'blue-light': '#6cb2eb',
   'blue-lighter': '#bcdefa',
   'blue-lightest': '#eff8ff',
-
   'indigo-darkest': '#191e38',
   'indigo-darker': '#2f365f',
   'indigo-dark': '#5661b3',
@@ -114,7 +105,6 @@ const colors = {
   'indigo-light': '#7886d7',
   'indigo-lighter': '#b2b7ff',
   'indigo-lightest': '#e6e8ff',
-
   'purple-darkest': '#1f133f',
   'purple-darker': '#352465',
   'purple-dark': '#794acf',
@@ -122,7 +112,6 @@ const colors = {
   'purple-light': '#a779e9',
   'purple-lighter': '#d6bbfc',
   'purple-lightest': '#f3ebff',
-
   'pink-darkest': '#45051e',
   'pink-darker': '#72173a',
   'pink-dark': '#eb5286',
@@ -130,6 +119,7 @@ const colors = {
   'pink-light': '#fa7ea8',
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
+  react: '#61DBFB',
 }
 
 module.exports = {
@@ -349,6 +339,7 @@ module.exports = {
   */
 
   backgroundColors: colors,
+  backgroundSize: colors,
 
   /*
   |-----------------------------------------------------------------------------
